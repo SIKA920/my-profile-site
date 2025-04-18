@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>자기소개 사이트</title>
+  <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+  <div class="window">
+    <div class="title-bar">
+      <span>뮥.exe</span>
+    </div>
+    <div class="menu">
+      <button onclick="showTab('intro')">자기소개</button>
+      <button onclick="showTab('fandom')">덕질중인 장르</button>
+      <button onclick="showTab('games')">하는 게임</button>
+      <button onclick="showTab('dislikes')">지뢰</button>
+    </div>
+    <div class="content">
+      <div id="intro" class="tab active">
+        <h2>뮥</h2>
+        <h5>20UP, BL> HL> GL | 잡덕 그림러/게임러 | 쿠소트윗/욕트윗多</h5>
+        <h6>게임에 인생을 판 상태입니다. 디코 켜놓고 같이 게임하는거 엄청 좋아해요! 마그마 화보 스페도 진심 좋아합니다... 이런 교류 좋아하시는 분이면 더 환영해요</h6>
+      </div>
+      <div id="fandom" class="tab">
+        <h2 style="text-align: center;">덕질중인 장르✨</h2>
+        <ul style="list-style: none; padding: 0;">
+          <li><h5 style="text-align: center; color: #960a0a;">오버워치(언급多)</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">보카로P&amp;뮤비캐</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">1차 자캐덕질</h5></li>
+          <li><h5 style="text-align: center; color: #960a0a;">단간론파 시리즈(언급多)</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">단간론파 어나더</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">댄디의 세계</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">브롤스타즈</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">카리스마 하우스</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">제5인격</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">사우스파크</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">오모리</h5></li>
+          <li><h6 style="text-align: center; color: #1e1c3f;">+그 외 언급이 적은 뽀시래기들...</h6></li>
+        </ul>
+      </div>          
+      <div id="games" class="tab">
+        <h2>하는 게임🎮</h2>
+        <h5 style= "color: #1e1c3f;">슬슬 너무 많아져서 그런데 아래 링크 참고해주세요!</h5>
+        <a href="https://steamcommunity.com/id/0meu2/" target="_blank">→ 스팀 프로필</a>
+        <h5>*친구 추가 코드: 1202285272</h5>
+      </div>
+      <div id="dislikes" class="tab">
+        <h2 style="text-align: center;">지뢰🚨</h2>
+        <ul style="list-style: none; padding: 0;">
+          <li><h3 style="text-align: center; color: #000000;">[보일시 블락 or 블블]</h3></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">3D 고어 사진 / 동영상 알티</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">QWER</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">투디 인권 진지하게 따지는 사람</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">극단적인 성향</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">어린 티 너무 심하게 나는 사람</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">공컾깨 엮어먹기 or 드림</h5></li>
+          <li><h3 style="text-align: center; color: #000000;">[직멘 X]</h3></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">에이스테, 비비노스, 규맹</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">임신물</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">ntr 소재(장난식은 ok)</h5></li>
+          <li><h5 style="text-align: center; color: #1e1c3f;">국내 버튜버</h5></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll(".tab").forEach(tab => {
+        tab.classList.remove("active");
+      });
+      document.getElementById(tabId).classList.add("active");
+    }
+  </script>
+</body>
+</html>
